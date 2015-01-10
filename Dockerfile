@@ -26,7 +26,7 @@ RUN a2enmod php5 && a2enmod rewrite && service apache2 reload
 ##//------------------------------------------------
 
 ENV APACHE_RUN_USER=www-data APACHE_RUN_GROUP=www-data APACHE_LOG_DIR=/var/log/apache2 APACHE_LOCK_DIR=/var/lock/apache2 APACHE_PID_FILE=/var/run/apache2.pid
-EXPOSE 80 443
+EXPOSE 80
 CMD ["/usr/sbin/apachectl", "-DFOREGROUND"]
 ##//------------------------------------------------
 ##///*******************************************************/
