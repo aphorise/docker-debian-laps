@@ -16,7 +16,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ##// Do update, upgrade (which may not be needed) & install stack essentials:
 ##//------------------------------------------------
 RUN apt-get update -y && apt-get -y upgrade
-RUN apt-get install -y apache2 curl php5 libssh2-php php5-curl php5-memcached php5-mysqlnd php5-adodb php5-gd php-apc php5-pgsql
+RUN apt-get install -y python apache2 curl php5 libssh2-php php5-curl php5-memcached php5-mysqlnd php5-adodb php5-gd php-apc php5-pgsql
 
 ##//------------------------------------------------
 ##// Enable apache mods & Override's for apps. 
@@ -26,13 +26,13 @@ RUN a2enmod php5 && a2enmod rewrite && service apache2 reload
 ##//------------------------------------------------
 
 ENV APACHE_RUN_USER=www-data APACHE_RUN_GROUP=www-data APACHE_LOG_DIR=/var/log/apache2 APACHE_LOCK_DIR=/var/lock/apache2 APACHE_PID_FILE=/var/run/apache2.pid
-EXPOSE 80 443
+EXPOSE 80
 CMD ["/usr/sbin/apachectl", "-DFOREGROUND"]
 ##//------------------------------------------------
 ##///*******************************************************/
 
 ##//////////////////////////////////////////////////////////////////
-# build: docker build -t debian/laps .
-# run: docker run -p 80:80 -p 443:443 -it --detach --name=laps debian/laps
-# cli: docker run -p 80:80 -p 443:443 -it --rm --name=laps debian/laps
+# build: docker build -t debian/lapspython .
+# run: docker run -p 80:80 -p 443:443 -it --detach --name=lapspython debian/lapspython
+# cli: docker run -p 80:80 -p 443:443 -it --rm --name=lapspython debian/lapspython
 ##//////////////////////////////////////////////////////////////////
