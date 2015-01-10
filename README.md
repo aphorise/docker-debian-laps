@@ -1,4 +1,4 @@
-#__Debian__ ``L``inux ``A``pache ``P``H5 ``S``tack (__*``LAPS``*__) Docker's
+#__Debian__ ``L``inux ``A``pache ``P``HP5 ``S``tack (__*``LAPS``*__) Docker's
 **Multiple** **[docker.io](http://docker.io \"Docker\")** Dockerfile's (_**Debian**:Wheezy 7.7_) incorporating (similar to XAMP / LAMP) a stack that includes:
 - **APACHE** (can be _nginx_)
 - **PHP5** (with many core php-plugins)
