@@ -1,18 +1,18 @@
 #__Debian__ ``L``inux ``A``pache ``P``H5 ``S``tack (__*``LAPS``*__) Docker's
-**Multiple** **[docker.io](http://docker.io \"Docker\")** Dockerfile's (_**Debian**:Wheezy 7.7_) incorporating, similar to XAMP / LAMP, a stack that includes:
-- **APACHE** (can be _nginix_)
+**Multiple** **[docker.io](http://docker.io \"Docker\")** Dockerfile's (_**Debian**:Wheezy 7.7_) incorporating (similar to XAMP / LAMP) a stack that includes:
+- **APACHE** (can be _nginx_)
 - **PHP5** (with many core php-plugins)
 
-By default **_apache_** ``php5`` & ``rewrite`` _mods_ are enabled which are commonly needed in most PHP orianteaited frameworks & applications. 
+By default **_apache_** ``php5`` & ``rewrite`` _mods_ are enabled which are commonly needed in most PHP orientated frameworks & applications.
 
-Other common & versatile development variants of LAPS provided with:
+Other common & versatile development variants of LAPS are:
 - __*``lapsnode``*__ [Node.js (1.4.x+)](http://nodejs.org/ \"node.js-website\")
 - __*``lapspython``*__ [python 2.7+ Programming Language](https://www.python.org/ \"python-website\")
-- __*``lapsdev``*__ Common Tools &  Utils (as above with: _build-essential_,_go_, _git_, _nano_, etc. ) 
+- __*``lapsdev``*__ Common Tools & Utilities (as above with: _build-essential_,_go_, _git_, _nano_ ... )
 
-A template application *__``laps200app``__* has also been provided that simply returns an unconditional [HTTP 200 OK](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html \"rfc2616\") response for any request using ```FallbackResource``` in .htaccess & index.php; both files are in-lined descripted within each ```Dockerfile```. 
+A template *__``laps200app``__* application has been provided which unconditionally returns a [HTTP 200 OK](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html \"rfc2616\") response for any request using ```FallbackResource``` in .htaccess & index.php; both files are in-lined within ```Dockerfile```.
 
-*__``lapsdev``__* is a more comprehensively equiped statck with more tools and ultitlies akine to a developers own personal computer system. This is based on the _``laps200app``_ which when run via **C**ommand-**L**ine-**I**nterface verbose, tail, output of access.log are echoed to the screen. 
+*__``lapsdev``__* is a more comprehensively equipped stack with more tools and utilities that developers own in personal / development computer system. This is based on the _``laps200app``_ which when run via **C**ommand-**L**ine-**I**nterface will verbose, tail and output access.log to the screen.
 
 Each ``Dockerfile``'s standalone containing all _build_ & _run_ instructions - eg:
 ```sh
@@ -26,7 +26,7 @@ Adjust leftmost ``-p`` numbers if local ``ports``: **80** (http) & **443** (http
 ```sh
 docker run -p 81:80 -p 444:443 -it --rm --name=laps debian/laps
 ```
-To shell into image via ``/bin/bash`` simply append instruction to run command eg: 
+To shell into image via ``/bin/bash`` simply append instruction to run command eg:
 ```sh
 docker run -p 81:80 -p 444:443 -it --rm --name=laps debian/laps /bin/bash
 ```
@@ -37,8 +37,9 @@ Default ``/var`` paths used for __apache2__ with default "It Works!" ``/var/www/
 REPOSITORY          TAG        IMAGE ID        CREATED    VIRTUAL SIZE
 debian/laps         latest     843b05802f6d      ...        183.1 MB
 debian/laps200app   latest     45c59e66f5b0      ...        183.1 MB
-debian/lapsdev      latest     747a117ab953      ...        894.7 MB
 debian/lapspython   latest     34bcb2e4a879      ...        205.3 MB
 debian/lapsnode     latest     dcfef0dde129      ...        212.2 MB
+debian/lapsdev      latest     747a117ab953      ...        903 MB
 ```
-To pull directly using ``docker`` from  [registry.hub.docker.com](https://registry.hub.docker.com/u/aphorise/debian-laps/ "registry.hub.docker.com") ``docker pull aphorise/laps`` for example. 
+To pull directly using ``docker`` from  [registry.hub.docker.com](https://registry.hub.docker.com/u/aphorise/debian-laps/ "registry.hub.docker.com") ``docker pull aphorise/debian-laps`` for example.
+
