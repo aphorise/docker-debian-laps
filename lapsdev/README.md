@@ -1,4 +1,4 @@
-#__Debian__ ``L``inux ``A``pache ``P``PH5 ``S``tack (__*``LAPS``*__) Docker
+#__Debian__ ``L``inux ``A``pache ``P``H5 ``S``tack (__*``LAPS``*__) Docker
 ## Common Development Utilities  
 [docker.io](http://docker.io \"Docker\") Dockerfile (_**Debian**:Wheezy 7.7_) full PHP & HTTPD development environment with common tools such as:
 ```

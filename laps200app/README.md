@@ -1,4 +1,4 @@
-#__Debian__ ``L``inux ``A``pache ``P``PH5 ``S``tack (__*``LAPS``*__) Docker
+#__Debian__ ``L``inux ``A``pache ``P``H5 ``S``tack (__*``LAPS``*__) Docker
 ## 200 OK - App
 Simple [docker.io](http://docker.io \"Docker\") Dockerfile (_**Debian**:Wheezy 7.7_) PHP  template (__``index.php``__) with __``.htaccess``__. An unconditional [__HTTP 200 OK__](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html \"rfc2616\") response is always provided for any request using ```FallbackResource``` in ``.htaccess`` to ``index.php``; both files are in-lined described within ```Dockerfile```. 
 
