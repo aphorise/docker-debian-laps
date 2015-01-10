@@ -1,4 +1,4 @@
-#__Debian__ __*``L``*__inux-__*``A``*__pache-__*``P``*__hp-__*``S``*__tack (__*``LAPS``*__) __Docker__
+#__Debian__ ``L``inux ``A``pache ``P``PH5 ``S``tack (__*``LAPS``*__) Docker
 ## Common Development Utilities  
 [docker.io](http://docker.io \"Docker\") Dockerfile (_**Debian**:Wheezy 7.7_) full PHP & HTTPD development environment with common tools such as:
 ```
@@ -24,11 +24,11 @@ cat Dockferfile
 ```
 Adjust leftmost ``-p`` numbers if local ``ports``: **80** (http) & **443** (https) are in use on testing machine - to use **_81_** & **_444_** bound to __*80*__ & __*443*__ in container:
 ```sh
-docker run -p 81:80 -p 444:443 -it --rm --name=laps debian/laps
+docker run -p 81:80 -p 444:443 -it --rm --name=lapsdev debian/lapsdev
 ```
 Default ``/var`` paths used for __apache2__ with default ``/var/www/index.php`` 
 
 To shell into image via ``/bin/bash`` simply append instruction to run command eg: 
 ```sh
-docker run -p 81:80 -p 444:443 -it --rm --name=laps debian/laps /bin/bash
+docker run -p 81:80 -p 444:443 -it --rm --name=laps debian/lapsdev /bin/bash
 ```

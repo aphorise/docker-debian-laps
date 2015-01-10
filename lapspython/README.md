@@ -1,4 +1,4 @@
-#__Debian__ __*``L``*__inux-__*``A``*__pache-__*``P``*__hp-__*``S``*__tack (__*``LAPS``*__) __Docker__
+#__Debian__ ``L``inux ``A``pache2 ``P``HP5 ``S``tack (__*``LAPS``*__) Docker
 ## (With) Python 2.x+
 [docker.io](http://docker.io \"Docker\") Dockerfile (_**Debian**:Wheezy 7.7_) with Apache, PHP5 & Python 
 

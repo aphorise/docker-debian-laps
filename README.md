@@ -1,13 +1,13 @@
-#__Debian__ __*``L``*__inux-__*``A``*__pache-__*``P``*__hp-__*``S``*__tack (__*``LAPS``*__) __Docker's__
+#__Debian__ ``L``inux ``A``pache ``P``PH5 ``S``tack (__*``LAPS``*__) Docker's
 **Multiple** **[docker.io](http://docker.io \"Docker\")** Dockerfile's (_**Debian**:Wheezy 7.7_) incorporating, similar to XAMP / LAMP, a stack that includes:
-- #####— **APACHE** (can be _nginix_)
-- #####— **PHP5** (with many core php-plugins)
+- **APACHE** (can be _nginix_)
+- **PHP5** (with many core php-plugins)
 
 By default **_apache_** ``php5`` & ``rewrite`` _mods_ are enabled which are commonly needed in most PHP orianteaited frameworks & applications. 
 
 Other common & versatile development variants of LAPS provided with:
-- ###### _``lapsnode``_ [Node.js (1.4.x+)](http://nodejs.org/ \"node.js-website\")
-- ###### _``lapspython``_ [python 2.7+ Programming Language](https://www.python.org/ \"python-website\")
+- __*``lapsnode``*__ [Node.js (1.4.x+)](http://nodejs.org/ \"node.js-website\")
+- __*``lapspython``*__ [python 2.7+ Programming Language](https://www.python.org/ \"python-website\")
 - __*``lapsdev``*__ Common Tools &  Utils (as above with: _build-essential_,_go_, _git_, _nano_, etc. ) 
 
 A template application *__``laps200app``__* has also been provided that simply returns an unconditional [HTTP 200 OK](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html \"rfc2616\") response for any request using ```FallbackResource``` in .htaccess & index.php; both files are in-lined descripted within each ```Dockerfile```. 
